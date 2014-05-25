@@ -17,7 +17,8 @@ These are the variables used for the tidy dataset in the run_analysis.R script f
 ============================================================================
 
 ##Variable Name    		##Definition/Explaination of Variable
-
+  <div class="markdown-body">
+  <pre style='font-family:;'>
 subject 			Group of volunteers numbered from 1-30 participating in the experiment
 activitylabel			List of six activities performed:
 				*WALKING
@@ -119,8 +120,8 @@ angle.Y.gravityMean		Angle between the axial signal in the Y direction to gravit
 angle.Z.gravityMean		Angle between the axial signal in the Z direction to gravity mean
 activity			Numerical representation of the 6 activities
 
-
-
+</pre>
+</div>
 * These 561 vectors in the original files were then reduced to 86 vectors, extracting only the mean and standard deviation measurements from the vectors. 
 
 * All of the mean and standard deviations variables were chosen in order to facilitate a better calculation of the average of all these measurements. This will provide us with a clearer reflection of the data used in relation to test subjects.
