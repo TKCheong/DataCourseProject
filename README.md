@@ -1,7 +1,9 @@
 ==================================================================
 Human Activity Recognition Using Smartphones Dataset
 Version 2.0
+
 Amended in line with the Version 1 Readme document from the Cousera Getting and Cleaning data course project
+
 ==================================================================
 Source:
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
