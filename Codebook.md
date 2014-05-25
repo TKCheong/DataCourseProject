@@ -15,10 +15,9 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These are the variables used for the tidy dataset in the run_analysis.R script for the averages generated using the subject-activitylabel combination.
 
 ============================================================================
-
-##Variable Name    		##Definition/Explaination of Variable
   <div class="markdown-body">
-  <pre style='font-family:;'>
+  <pre style='font-family:;'><code>
+<b>Variable Name    		Definition/Explaination of Variable</b>
 subject 			Group of volunteers numbered from 1-30 participating in the experiment
 activitylabel			List of six activities performed:
 				*WALKING
@@ -119,7 +118,7 @@ angle.X.gravityMean		Angle between the axial signal in the X direction to gravit
 angle.Y.gravityMean		Angle between the axial signal in the Y direction to gravity mean
 angle.Z.gravityMean		Angle between the axial signal in the Z direction to gravity mean
 activity			Numerical representation of the 6 activities
-
+</code>
 </pre>
 </div>
 * These 561 vectors in the original files were then reduced to 86 vectors, extracting only the mean and standard deviation measurements from the vectors. 
