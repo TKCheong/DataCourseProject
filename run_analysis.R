@@ -30,12 +30,12 @@ names(activity)<-activityname
 library(plyr)                               
 mergeddata<-join(finaldata,activity,type="inner")      #merge by activity in dataset with activity names
 
-ds<-mergeddata[,c(1:6,41:46,81:86,121:126,161:166)]    #extract all mean and std columns
-dsa<-mergeddata[,c(201:202,214:215,227:228,240:241)]
-dsb<-mergeddata[,c(253:254,266:271,294:296,345:350,373:375)]
-dsc<-mergeddata[,c(424:429,452:454,503:504,513,516:517)]
-dsd<-mergeddata[,c(526,529:530,539,542:543,552,555:564)]
-cleandata<-data.frame(ds,dsa,dsb,dsc,dsd)
+exmean<-grep('mean',names(mergeddata))
+newexmean<-mergeddata[,c(exmean)]
+exstd<-grep('std',names(mergeddata))
+newexstd<-mergeddata[,c(exstd)]
+extra<-mergeddata[,c(562:564)]
+cleandata<-cbind(newexmean,newexstd,extra)
 
 library(data.table)                     
 DT<-data.table(cleandata)
